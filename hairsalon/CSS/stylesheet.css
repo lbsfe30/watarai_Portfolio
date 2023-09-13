@@ -1,0 +1,289 @@
+@charset "utf-8";
+.for-pc {
+    display: block;
+}
+
+.for-sp {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+.parallax {
+    background-image: url(../images/HAIRSALON1.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* タイトルのよこ線 */
+.headline {
+    display: flex;
+    align-items: center;
+    margin: 20px 10%;
+
+}
+
+.headline:before,
+.headline:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #666;
+}
+
+.headline:before {
+    margin-right: 1rem;
+}
+
+.headline:after {
+    margin-left: 1rem;
+}
+ 
+/* headerは固定 */
+.HOME_main {
+    background: rgb(red, green, blue);
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 100;
+}
+
+.HOME_main img {
+    width: 100px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.HOME_main ul {
+    display: flex;
+    list-style: none;
+}
+
+.HOME_main li {
+    margin-left: 50px;
+}
+
+/* ABOUT */
+
+.flex_about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+}
+
+.flex_about h3 {
+    padding: 2px;
+}
+
+.flex_about img {
+    width: 30%;
+}
+
+.top_about {
+    margin-top: 5%;
+}
+
+/* STAFF */
+.flex_STAFF {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* MENU */
+.flex_MENU {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex_MENU h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5em;
+    text-decoration-color: greenyellow;
+    text-underline-offset: -0.2em;
+    text-decoration-skip-ink: none;
+}
+
+.flex_MENU h3 {
+    border-bottom: 1px solid greenyellow;
+}
+
+.p {
+    text-align: center;
+    margin: 0 2em;
+}
+
+/* CONTACT */
+.CONTACT {
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+/* 中身の一部 */
+.content {
+    max-width: 1200px;
+    margin: 4em auto;
+}
+
+.flex_CONTACT,
+.flex_about,
+.flex_MENU,
+.flex_STAFF {
+    margin: 0 2em;
+}
+
+.border {
+    border: 10px solid black;
+    margin: 1em;
+}
+
+/* footer */
+#footer {
+    border-top: solid 1px lightgray;
+    padding-bottom: 10px;
+}
+
+#footer ul {
+    text-align: center;
+    padding: 0;
+}
+
+#footer ul li {
+    padding: 0 4px;
+    margin: 0;
+    display: inline;
+}
+
+#footer p {
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    font-size: 350%;
+    font-weight: bold;
+}
+
+.text_collar li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0;
+    font-weight: bold;
+}
+
+.text_collar li a:hover {
+    color: #1a0dab;
+    padding: 0.5em 0;
+    font-weight: bold;
+}
+
+.flex_CONTACT .text a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex_CONTACT .text img {
+    padding: 0 2em;
+}
+
+
+
+
+/* レスポンシブ */
+@media screen and (max-width: 800px) {
+    .flex_about {
+        flex-direction: column;
+    }
+
+    .flex_about img {
+        width: 100%;
+    }
+
+    .top_about {
+        flex-direction: column-reverse;
+    }
+
+    .flex_MENU {
+        flex-direction: column;
+    }
+
+    .flex_MENU div {
+        margin: auto;
+    }
+    #footer ul li,#footer p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .for-pc {
+        display: none;
+    }
+
+    .for-sp {
+        display: block;
+    }
+
+}
+
+.logo_sp img {
+    width: 100px;
+    border-radius: 10px;
+    z-index: 100;
+    position: fixed;
+    top: 0%;
+    left: 87%;
+    transform: translateX(-50%);
+}
+
+
+/* プラス */
+.pallax {
+    background-attachment: fixed;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pa1 {
+    background-image: url(../images/logo_green.png);
+}
+
+.pa2 {
+    background-image: url(../images/logo_touka.png);
+}
+
+.pa3 {
+    background-image: url(../images/logo_green.png);
+}
+
+.pa4 {
+    background-image: url(../images/logo_touka.png);
+}
+
+@media (max-width: 800px) {
+    .pallax {
+        display: none;
+    }
+}

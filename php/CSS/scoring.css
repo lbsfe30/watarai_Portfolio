@@ -1,0 +1,198 @@
+/* リンク */
+.link a {
+    color: rgb(195, 203, 204);
+    padding: 0.5px;
+}
+
+.link a:hover {
+    color: rgb(228, 248, 248);
+    padding: 0.5px;
+}
+
+.scoring-flex {
+    display: flex;
+    margin: 20px 50px;
+    gap: 2%;
+
+    @media (max-width: 1000px) {
+        display: block;
+        margin: 20px;
+    }
+
+}
+
+.scoring {
+    width: 40%;
+    background-color: #120f1c;
+    border-radius: 30px;
+    padding: 20px;
+    max-height: 700px;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+.sticky {
+    position: sticky;
+    top: 15px;
+  }
+
+.scoring {
+    @media (max-width: 450px) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.scoring .p {
+    @media (max-width: 1000px) {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.text-container {
+    width: 60%;
+    background-color: #120f1c;
+    border-radius: 30px;
+    padding: 20px;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 10px 0;
+
+    }
+}
+
+.text-container {
+    @media (max-width: 450px) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+#form-s,
+.point h4,
+h1,
+.text-container h3,
+.scoring h3,
+.link p {
+    text-align: center;
+}
+
+#submit {
+    background-color: rgb(164, 197, 164);
+    border: none;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.collar {
+    color: aquamarine;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.RED {
+    color: red;
+}
+
+/* ヘッダー */
+.header {
+    background-color: rgb(red, green, blue);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: #000000;
+    transition: ease .4s;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+}
+
+/* ハンバーガーメニュー */
+.header__hamburger {
+    width: 35px;
+    height: 100%;
+}
+
+.hamburger {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    transition: ease .4s;
+    display: block;
+    z-index: 999;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+    top: 0;
+}
+
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+    transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+}
+
+

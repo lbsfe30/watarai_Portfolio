@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slide-items {
+    width: 80%;
+    margin: 50px auto 40px auto;
+    padding: 0;
+}
+
+.slide-items img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+    opacity: 30%;
+    transform: scale(0.8);
+    /* 透過　大きさを80％に */
+
+    transition: all 0.3s;
+}
+
+.slick-center {
+    /* センター画像のみ元に戻す */
+    opacity: 100%;
+    transform: scale(1);
+}
+
+.slick-center img {
+    /* センター画像のみ元に戻す */
+    border: 10px solid;
+    border-image: linear-gradient(to right bottom,#e0d9b6,#b4983a) 1 / 10px;
+    box-sizing: border-box;
+}
+.slick-prev::before {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateX(25%) rotate(-135deg);
+}
+
+
+.slick-next::before {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateX(-25%) rotate(45deg);
+}
+

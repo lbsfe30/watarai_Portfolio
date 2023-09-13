@@ -1,0 +1,52 @@
+/* リンク */
+.link a {
+    color: rgb(228, 228, 228);
+    padding: 0.5px;
+}
+
+.link a:hover {
+    color: rgb(172, 255, 255);
+    padding: 0.5px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.content h1,
+.content p {
+    text-align: center;
+    color: aquamarine;
+}
+
+.time {
+    font-size: 0.5em;
+    text-align: right;
+}
+
+#submit {
+    margin-bottom: 10px;
+    background-color: rgb(164, 197, 164);
+    border: none;
+    cursor: pointer;
+    width: 150px;
+}
+#chat{
+    text-align: center;
+}
+.id{
+    font-size: smaller;
+}
